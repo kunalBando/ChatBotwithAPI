@@ -14,7 +14,7 @@ body {
 #app {
   width: 100vw;
   height: 100vh;
-  background: #ffff36;
+  background: rgb(247, 230, 196);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,7 +51,7 @@ body {
 }
 
 .ai {
-  background: rgb(255, 208, 1)
+  background: rgb(241, 195, 118)
 }
 
 .chat {
@@ -70,7 +70,7 @@ body {
   height: 36px;
   border-radius: 5px;
 
-  background: #df0000;
+  background: rgb(0, 16, 105) ;
 
   display: flex;
   justify-content: center;
@@ -78,7 +78,7 @@ body {
 }
 
 .ai .profile {
-  background: rgb(141, 0, 0);
+  background: rgb(0, 141, 106);
 }
 
 .profile img {
@@ -119,7 +119,7 @@ form {
   margin: 0 auto;
   border: solid 1px #000000;
   padding: 10px;
-  background: #ffffff;
+  background: rgb(255, 108, 34);
 
   display: flex;
   flex-direction: row;
