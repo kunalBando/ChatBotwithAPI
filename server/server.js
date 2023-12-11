@@ -22,7 +22,7 @@ const fetchEntityNames = async () => {
   try {
     // Replace 'YOUR_DOTNET_API_ENDPOINT' with the actual endpoint of your .NET Core API
     const response = await axios.get(
-      "http://localhost:5062/api/Entity/GetAllEntities"
+      "https://featuremarketplacewebapi20231207151555.azurewebsites.net/api/Entity/GetAllEntities"
     );
 
     const entityNames = response.data.map((entity) => entity.entityName);
@@ -50,10 +50,11 @@ app.post("/", async (req, res) => {
       res.status(200).send({
         bot: "Hello! How can I help you?",
       });
-    } else if (
+    } else 
+    if (
       (prompt.includes("add") && prompt.includes("entity")) ||
       (prompt.includes("add") && prompt.includes("feature")) ||
-      (prompt.includes("add")  && prompt.includes("entity"))||
+      (prompt.includes("add")  && prompt.includes("entities"))||
       (prompt.includes("add")  && prompt.includes("features"))
     ) {
       // Fetch entity names from the .NET Core API
