@@ -3,7 +3,7 @@
 * Kunal Bandyopadhyay
 
 ## Overview
-This repository contains the code for a simple chatbot built using HTML, JavaScript, and hosted on Azure. The chatbot communicates with a Node.js server to generate responses using the OpenAI GPT-3.5 Turbo model.
+This repository contains the code for chatbot built using HTML, JavaScript, and hosted on Azure for Feature Marketplace WebApp. The chatbot communicates with a Node.js server to generate responses using the OpenAI GPT-3.5 Turbo model, predefined responses to certain Keywords and external APIs to fetch real-time data about the website.
 
 ## Features
 
