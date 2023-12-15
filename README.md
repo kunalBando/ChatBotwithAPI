@@ -1,4 +1,4 @@
-# OpenAIChatBot
+# FeatureMarketplaceChatBot
 -- Created By --
 * Kunal Bandyopadhyay
 
@@ -9,8 +9,9 @@ This repository contains the code for a simple chatbot built using HTML, JavaScr
 
 - User-friendly chat interface.
 - Integration with OpenAI GPT-3.5 Turbo for intelligent responses.
-- Buttons/pills for predefined prompts.
-- ... (add more features as needed)
+- Buttons for predefined prompts.
+- Fetches Entities and Features for Entities from the database in real time whenever user requests.
+- Gives information about the website and assists users with website usage.
 
 ## Code Structure
 - index.html: The main HTML file containing the chatbot interface.
@@ -18,9 +19,34 @@ This repository contains the code for a simple chatbot built using HTML, JavaScr
 - style.css: Stylesheet for the chatbot interface.
 
 ## New Learning Values
-- Integration with OpenAI API: Discuss the process of integrating the OpenAI GPT-3.5 Turbo model into your project.
-- Frontend Development: Share your experiences and learning points related to building a user-friendly chat interface.
-- Asynchronous JavaScript: Highlight any challenges faced and lessons learned when dealing with asynchronous operations in JavaScript.
+* Integration with OpenAI API: 
+- Learnt API key generation in OpenAI.
+- Familiarized with OpenAI documentaion about various available chat models to choose the best for our usecase.
+- Understood how to structure API requests and handle responses.
+- Learnt the importance of securing the API key and changed code visibility from public to private
+
+* Frontend Development: 
+- Aimed for intuitive abd clean design for user ease.
+- Added buttons with predefined prompts for effortless user interaction.
+- Considered color schemes, fonts, and visual elements to create a visually appealing and cohesive design.
+- Ensured responsiveness across various devices, especially on mobile as responsive design enhances the user experience.
+- Added loading animation and text by text typing for bot responses.
+- Anticipated and gracefully handled errors by providing meaningful error messages to guide users in case of input issues.
+
+* Natural Language Processing:
+- Used keywords recognition in prompts to designate appropriate responses.
+- Used Regular expressions for matching prompt patterns and recognise entity name when fetching for features.
+
+* Serverside Programming:
+- Used express and defined middleware for CORS and JSON parsing.
+- Fetching data from external APIs for real time information on Entities and features.
+- Used Try-Catch Mechanism, Error Propagation and gave Error Response to Client for better error handling.
+- Used dotenv package to load API key from a .env file thus enhancing security by keeping sensitive information separate from the codebase and version control.
+
+## Future Enhancements
+- Implement more advanced conversation flows.
+- Improve UI/UX design.
+- Add support for multiple languages.
 
 ## How to setup project locally
 * Clone the app using ```git clone https://github.com/kunalBando/ChatBotwithAPI.git```
@@ -39,9 +65,6 @@ This repository contains the code for a simple chatbot built using HTML, JavaScr
 
 ## Live Demo
 * **You can see the live demo using this link :**
-https://open-ai-chat-bot-delta.vercel.app/
+https://nice-sky-08aa0150f.4.azurestaticapps.net/
 
-## Future Enhancements
-- Implement more advanced conversation flows.
-- Improve UI/UX design.
-- Add support for multiple languages.
+
