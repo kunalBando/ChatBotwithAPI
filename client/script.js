@@ -1,9 +1,8 @@
-import bot from "./assets/bot.svg";
-import user from "./assets/user.svg";
 
 const form = document.querySelector('form');
 const chatContainer = document.querySelector('#chat_container');
-const serverApi = "http://localhost:5000/";
+const serverApi = "https://chatbotnodeapi.azurewebsites.net/";
+//const serverApi = "http://localhost:5000";
 
 let loadInterval;
 
@@ -68,8 +67,7 @@ function chatStripe(isAi, value, uniqueId) {
       <div class="wrapper ${isAi && 'ai'}">
         <div class="chat">
           <div class="profile">
-            <img src="${isAi ? bot : user}" 
-              alt="${isAi ? 'bot' : 'user'}" />
+            <label class="img" > ${isAi ? "bot" : "user"}</label>
           </div>
           <div class="message" id=${uniqueId}>${value}</div>
         </div>
@@ -126,6 +124,33 @@ const handleSubmit = async (e) => {
     console.log(err);
   }
 }
+
+const buttonContainer = document.getElementById('buttonContainer');
+
+// Function to handle button clicks
+const handleButtonClick = (buttonText) => {
+  const promptTextarea = document.querySelector('textarea[name="prompt"]');
+  promptTextarea.value = buttonText;
+
+  // Trigger form submission or any other relevant action
+  form.dispatchEvent(new Event('submit'));
+};
+
+document.getElementById('btnWebsite').addEventListener('click', () => {
+  handleButtonClick('Tell me about the website');
+});
+
+document.getElementById('btnEntities').addEventListener('click', () => {
+  handleButtonClick('What are the entities in your website?');
+});
+
+document.getElementById('btnFeatures').addEventListener('click', () => {
+  handleButtonClick('Search for features in a given entity');
+});
+
+document.getElementById('btnAdd').addEventListener('click', () => {
+  handleButtonClick('How to add a feature');
+});
 
 /**
  * add event listners and callback functions in enterkey pressed
