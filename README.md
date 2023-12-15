@@ -59,8 +59,8 @@ This repository contains the code for chatbot built using HTML, JavaScript, and 
 ## Running Server Side
 * Redirect into project folder ```cd /<your-project-folder>/server```
 * Install node modules ```npm install```
-* Create .env file using ```cp .env.example .env```
-* Add your OpenAI Api key at the relant environment key. (more info at https://openai.com/api/)
+* Generate your API Key from OpenAI(more info at https://openai.com/api/)
+* Add your OpenAI Api key in the .env file.
 * Run client ```npm run server```
 
 ## Live Demo
