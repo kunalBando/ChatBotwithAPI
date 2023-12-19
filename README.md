@@ -65,6 +65,5 @@ This repository contains the code for chatbot built using HTML, JavaScript, and 
 
 ## Live Demo
 * **You can see the live demo using this link :**
-https://nice-sky-08aa0150f.4.azurestaticapps.net/
-
+https://victorious-ocean-0f5d4ab10.4.azurestaticapps.net/
 
